@@ -1,0 +1,344 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+/* Estilizando o header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 10px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Logo */
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+/* Estilo padrão para computadores */
+.fullscreen-image {
+  position: relative;
+  background-image: 
+    linear-gradient(to bottom, rgba(8, 13, 19, 0.61), rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+    url('../imagens/wallpaper.jpeg');
+  background-size: cover; /* Garante que a imagem ocupe todo o espaço disponível */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 100%;
+}
+
+/* Estilo para telas menores (celulares) */
+@media (max-width: 1278px) {
+  .fullscreen-image {
+    position: relative;
+    background-image: 
+      linear-gradient(to bottom, rgba(8, 13, 19, 0.61), rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url('../imagens/wallpaper.jpeg');
+    background-size: contain; /* Torna a imagem responsiva */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 225px);
+    width: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .fullscreen-image {
+    position: relative;
+    background-image: 
+      linear-gradient(to bottom, rgba(8, 13, 19, 0.61), rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url('../imagens/wallpaper.jpeg');
+    background-size: contain; /* Torna a imagem responsiva */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 610px);
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .fullscreen-image {
+    position: relative;
+    background-image: 
+      linear-gradient(to bottom, rgba(8, 13, 19, 0.61), rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url('../imagens/wallpaper.jpeg');
+    background-size: contain; /* Torna a imagem responsiva */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 680px);
+    width: 100%;
+  }
+}
+
+@media (max-width: 384px) {
+  .fullscreen-image {
+    position: relative;
+    background-image: 
+      linear-gradient(to bottom, rgba(8, 13, 19, 0.61), rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url('../imagens/wallpaper.jpeg');
+    background-size: contain; /* Torna a imagem responsiva */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 635px);
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .fullscreen-image {
+    position: relative;
+    background-image: 
+      linear-gradient(to bottom, rgba(8, 13, 19, 0.61), rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url('../imagens/wallpaper.jpeg');
+    background-size: contain; /* Torna a imagem responsiva */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 600px);
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* Sessão de introdução */
+.next-section {
+  background-color: #000000;
+  padding: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.next-section h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffee04;
+}
+
+.next-section p {
+  font-size: 1rem;
+  color: white;
+}
+
+.tag-documentary {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Sessão de vídeos */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-section .text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.video-section .text-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #FFD700;
+}
+
+.video-section .text-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.video-section .image-container {
+  flex: 1;
+  max-width: 560px;
+}
+
+.video-section .image-container img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Sessão de temporada */
+.season-section {
+  text-align: center;
+  color: #ffee04;
+  background-color: #000;
+  padding: 50px;
+}
+
+.season-section h2 {
+  padding-bottom: 50px;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000000;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.02);
+  background-color: #0e0e0e;
+}
+
+.video-container object {
+  width: 30%;
+  height: auto;
+}
+
+.video-container span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #ffd900;
+  flex-shrink: 0;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #c00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .video-section {
+    flex-direction: column;
+  }
+
+  .video-section .text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .video-section .text-content p {
+    font-size: 1rem;
+  }
+
+  .video-container object {
+    width: 100%;
+  }
+
+  .modal-content object {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 50px;
+  }
+
+  .next-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-section .text-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .video-section .text-content p {
+    font-size: 0.9rem;
+  }
+
+  .video-container span {
+    font-size: 1rem;
+  }
+
+  .modal-content object {
+    width: 95%;
+  }
+}
